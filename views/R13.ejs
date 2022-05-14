@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Huan Jai Yong</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/imgR13/R14.jpg");
+  min-height: 100%;
+    -webkit-filter: contrast(90%);
+    filter: contrast(90%);
+
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="home" class="w3-bar-item w3-button">HOME</a>
+    <a href="Delivery1" class="w3-bar-item w3-button">Delivery</a>
+    <a href="Receive1" class="w3-bar-item w3-button">Receive</a>
+    <a href="typeoffood" class="w3-bar-item w3-button">type of food</a>
+    <a href="Recommended-restaurants1" class="w3-bar-item w3-button">Recommended-restaurants</a>
+    <a href="allrestaurants" class="w3-bar-item w3-button">All restaurants</a>
+    <input type=button onClick='window.history.back()' value='No'>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10.00am to 09.00pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Huan<br>Jai Yong</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Huan<br>Jai Yong</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+     
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Recommended');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">อาหารภาคเหนือ</div>
+      </a>
+
+      
+         
+    
+    </div>
+
+    <div id="Recommended" class="w3-container menu w3-padding-32 w3-white">
+     
+    <h4><b><a href="#ไก่เมืองนึ่งสมุนไพร สูตรเฉพาะเฮือนใจ๋ยอง" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+     <img src="/imgR13/ไก่เมืองนึ่งสมุนไพร สูตรเฉพาะเฮือนใจ๋ยอง.jpg" alt="Norway" style="width:50%">
+     <h1><b>ไก่เมืองนึ่งสมุนไพร สูตรเฉพาะเฮือนใจ๋ยอง </b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿279.</span></h1>
+     <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+      
+      <h4><b><a href="#ลาบไก่คั่ว" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+      <img src="/imgR13/ลาบไก่คั่ว.jpg" alt="Norway" style="width:50%">
+      <h1><b>ลาบไก่คั่ว</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿239.</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+       <hr>
+
+       <h4><b><a href="#ลาบปลานิลคั่ว" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+      <img src="/imgR13/ลาบปลานิลคั่ว.jpg" alt="Norway" style="width:50%">
+      <h1><b>ลาบปลานิลคั่ว</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿179.</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+       <hr>
+
+       <h4><b><a href="#ลาบหมูคั่ว" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+      <img src="/imgR13/ลาบหมูคั่ว.jpg" alt="Norway" style="width:50%">
+      <h1><b>ลาบหมูคั่ว</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿109.</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+       <hr>
+
+       <h4><b><a href="#ลาบหมูดิบ" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+      <img src="/imgR13/ลาบหมูดิบ.jpg" alt="Norway" style="width:50%">
+      <h1><b>ลาบหมูดิบ</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿159.</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+       <hr>
+
+       <h4><b><a href="#ปูอ่อง" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+       <img src="/imgR13/ปูอ่อง.jpg" alt="Norway" style="width:50%">
+       <h1><b>ปูอ่อง</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿119.</span></h1>
+       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+        <hr>
+ 
+        <h4><b><a href="#ไส้อั่ว" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+       <img src="/imgR13/ไส้อั่ว.jpg" alt="Norway" style="width:50%">
+       <h1><b>ไส้อั่ว</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿109.</span></h1>
+       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+        <hr>
+
+        <h4><b><a href="#หมูทอด" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+       <img src="/imgR13/หมูทอด.jpg" alt="Norway" style="width:50%">
+       <h1><b>หมูทอด</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿219.</span></h1>
+       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+        <hr>
+
+       
+     
+      
+<br>
+</div>
+</div>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

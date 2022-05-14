@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Khum Hom Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/imgR8/R9.png");
+  min-height: 100%;
+    -webkit-filter: contrast(90%);
+    filter: contrast(90%);
+
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="home" class="w3-bar-item w3-button">HOME</a>
+    <a href="Delivery1" class="w3-bar-item w3-button">Delivery</a>
+    <a href="Receive1" class="w3-bar-item w3-button">Receive</a>
+    <a href="typeoffood" class="w3-bar-item w3-button">type of food</a>
+    <a href="Recommended-restaurants1" class="w3-bar-item w3-button">Recommended-restaurants</a>
+    <a href="allrestaurants" class="w3-bar-item w3-button">All restaurants</a>
+    <input type=button onClick='window.history.back()' value='No'>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 09am to 17pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Khum<br>Hom Cafe</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Khum<br>Hom Cafe</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Recommended');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Recommended</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'DRINK');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">DRINK</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'PASTA&SALAD');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">PASTA&SALAD</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'BAKERY');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">BAKERY</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'PIZZA');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">PIZZA</div>
+        
+        <a href="javascript:void(0)" onclick="openMenu(event, 'อาหารจานเดียว');">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red">อาหารจานเดียว</div>
+                
+          </a>
+      </a>
+    </div>
+
+    <div id="Recommended" class="w3-container menu w3-padding-32 w3-white">
+     <h4><b><a href="#ทอดมันปลา" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+     <img src="/imgR8/ทอดมัน.webp" alt="Norway" style="width:50%">
+     <h1><b>ทอดมัน</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿129.</span></h1>
+     <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+      <h4><b><a href="#ผัดไทเส้นจันทร์" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+      <img src="/imgR8/ผัดไทเส้นจันทร์.jpg" alt="Norway" style="width:50%">
+      <h1><b>ผัดไทเส้นจันทร์</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿110.</span></h1>
+      
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+       <hr>
+    </div>
+
+    <div id="DRINK" class="w3-container menu w3-padding-32 w3-white">
+        
+        <h4><b><a href="#คุ้มหอมพีชที" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+        <img src="/imgR8/คุ้มหอมพีชที.jpg" alt="Norway" style="width:50%">
+        <h1><b>Khumhom Peach tea </b> <span class="w3-text-grey">(คุ้มหอมพีชที)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿150.</span></h1>
+        <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+         <hr>
+   
+         <h4><b><a href="#คุ้มหอมคอฟฟี่" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/คุ้มหอมคอฟฟี่.webp" alt="Norway" style="width:50%">
+         <h1><b>Khumhom Coffee </b> <span class="w3-text-grey">(คุ้มหอมคอฟฟี่)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿140.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+
+         <h4><b><a href="#คุ้มหอมเลม่อน" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+         <img src="/imgR8/คุณหอมเลม่อน.webp" alt="Norway" style="width:50%"> 
+         <h1><b>Khumhom Lemonads </b> <span class="w3-text-grey">(คุ้มหอมเลม่อน)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿140.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+
+          <h4><b><a href="#ยูซุฮันนี่โซดา" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+          <img src="/imgR8/ยูซุฮันนี่โซดา.jpg" alt="Norway" style="width:50%"> 
+         <h1><b>Yuzu Honey Soda </b> <span class="w3-text-grey">(ยูซุฮันนี่โซดา)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿150.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+
+          <h4><b><a href="#มัจฉะ ลาเต้" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+          <img src="/imgR8/มัจฉะ ลาเต้.jpg" alt="Norway" style="width:50%"> 
+         <h1><b>Matcha Latte </b> <span class="w3-text-grey">(มัจฉะ ลาเต้)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿120.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+
+          <h4><b><a href="#ชาไทย" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+          <img src="/imgR8/ชาไทย.jpg" alt="Norway" style="width:50%"> 
+         <h1><b>Thaitea </b> <span class="w3-text-grey">(ชาไทย)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿85.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+
+          <h4><b><a href="#โกโก้ (2)" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+          <img src="/imgR8/โกโก้2.jpg" alt="Norway" style="width:50%"> 
+         <h1><b>Cocoa</b> <span class="w3-text-grey">(โกโก้ 2)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿120.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+          
+          <h4><b><a href="#เอสเพรสโซ่" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+          <img src="/imgR8/เอสเพรสโซ่.webp" alt="Norway" style="width:50%"> 
+         <h1><b>Espresso </b> <span class="w3-text-grey">(เอสเพรสโซ่)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿85.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+          
+          <h4><b><a href="#อเมริกาโน่" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+          <img src="/imgR8/อเมริกาโน่.jpg" alt="Norway" style="width:50%">
+         <h1><b>Americano </b> <span class="w3-text-grey">(อเมริกาโน่)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿85.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+
+          <h4><b><a href="#ลาเต้" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+          <img src="/imgR8/ลาเต้.webp" alt="Norway" style="width:50%"> 
+         <h1><b>Latte</b> <span class="w3-text-grey">(ลาเต้)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿95.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+        
+          <h4><b><a href="#คาปูชิโน่" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+          <img src="/imgR8/คาปูชิโน่.jpg" alt="Norway" style="width:50%"> 
+         <h1><b>Cappucino</b> <span class="w3-text-grey">(คาปูชิโน่)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿95.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+
+          <h4><b><a href="#มอคค่า" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+          <img src="/imgR8/มอคค่า.webp" alt="Norway" style="width:50%">
+         <h1><b>Mocha</b> <span class="w3-text-grey">(มอคค่า)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿95.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+        
+          <h4><b><a href="#ชามะนาว" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4>
+          <img src="/imgR8/ชามะนาว.webp" alt="Norway" style="width:50%"> 
+          <h1><b>Lemon tea</b> <span class="w3-text-grey">(ชามะนาว)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿75.</span></h1>
+          <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+           <hr>
+    </div>
+
+
+    <div id="PASTA&SALAD" class="w3-container menu w3-padding-32 w3-white">
+        <h4><b><a href="#สปาเก็ตตี้คาโบนาล่า" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+        <img src="/imgR8/สปาเก็ตตี้คาโบนาล่า1.png" alt="Norway" style="width:50%">
+        <h1><b>Spaghetti Carbonara </b> <span class="w3-text-grey">(สปาเก็ตตี้คาโบนาล่า)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿210.</span></h1>
+        
+        <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+         <hr>
+         <h4><b><a href="#สปาเก็ตตี้ซอสมันกุ้ง" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/สปาเก็ตตี้ซอสมันกุ้ง.jpg" alt="Norway" style="width:50%">
+         <h1><b>Prawn Spaghetti with Prawn Oil </b> <span class="w3-text-grey">(สปาเก็ตตี้ซอสมันกุ้ง)</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿220.</span></h1>
+         
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+          <h4><b><a href="#สปาเก็ตตี้พริกแห้ง " class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/สปาเก็ตตี้พริกแห้ง.jpg" alt="Norway" style="width:50%">
+         <h1><b>Spaghetti Dry Chilli bacon </b> <span class="w3-text-grey">(สปาเก็ตตี้พริกแห้ง )</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿170.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+          <h4><b><a href="#สปาเก็ตตี้พริกแห้งไส้อั่ว " class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/สปาเก็ตตี้พริกแห้งไส้อั่ว.jpg" alt="Norway" style="width:50%">
+         <h1><b>Spaghetti Dry Chilli Chiangmai Sausage  </b> <span class="w3-text-grey">(สปาเก็ตตี้พริกแห้งไส้อั่ว )</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿185.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+    </div>
+    
+    <div id="BAKERY" class="w3-container menu w3-padding-32 w3-white">
+        <h4><b><a href="#ครัวซองต์" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+        <img src="/imgR8/ครัวซองต์.jpg" alt="Norway" style="width:50%">
+        <h1><b>Plain Croissant </b> <span class="w3-text-grey">(ครัวซองต์)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">฿50.</span></h1>
+        
+        <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+         <hr>
+         <h4><b><a href="#ครัวซองต์ช็อกโกแลต" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/ครัวซองต์ช็อกโกแลต.webp" alt="Norway" style="width:50%">
+         <h1><b>chocolate croissant </b> <span class="w3-text-grey">(ครัวซองต์ช็อกโกแลต)</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿80.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+          <h4><b><a href="#ครัวซองต์อัลมอนด์ " class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/ครัวซองต์อัลมอนด์.jpg" alt="Norway" style="width:50%">
+         <h1><b>Almond Croissant </b> <span class="w3-text-grey">(ครัวซองต์อัลมอนด์ )</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿75.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+          <h4><b><a href="#ครัวซองไส้คัสตาร์ดครีม  " class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/ครัวซองไส้คัสตาร์ดครีม.jpg" alt="Norway" style="width:50%">
+         <h1><b>Salted caramel croissant </b> <span class="w3-text-grey">(ครัวซองไส้คัสตาร์ดครีม  )</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿95.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+          <h4><b><a href="#พายแอปเปิล  " class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/พายแอปเปิล.jpg" alt="Norway" style="width:50%">
+         <h1><b>Apple pie </b> <span class="w3-text-grey">(พายแอปเปิล  )</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿80.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+          <h4><b><a href="#ไอศรีมไข่แข็ง" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/ไอศรีมไข่แข็ง.jpg" alt="Norway" style="width:50%">
+         <h1><b>Frozen Egg Yolk Ice Cream   </b> <span class="w3-text-grey">(ไอศรีมไข่แข็ง )</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿69.</span></h1>
+         <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+      </div>
+     
+      <div id="PIZZA" class="w3-container menu w3-padding-32 w3-white">
+        <h4><b><a href="#พิซซ่าฮาวายเอี้ยน" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgR8/พิซซ่าฮาวายเอี้ยน.jpg" alt="Norway" style="width:50%">
+         <h1><b>Pizza Hawaiian   </b> <span class="w3-text-grey">(พิซซ่าฮาวายเอี้ยน )</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿210.</span></h1>
+         <p class="w3-text-grey"> ขนาด 10 นิ้ว Fresh tomatoes, fresh mozzarella, fresh basil</p>
+          <hr>
+      </div>
+      <div id="อาหารจานเดียว" class="w3-container menu w3-padding-32 w3-white">
+        <h4><b><a href="#ทอดมันปลา" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+     <img src="/imgR8/ทอดมัน.webp" alt="Norway" style="width:50%">
+     <h1><b>ทอดมัน</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿129.</span></h1>
+     <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+      <h4><b><a href="#ผัดไทเส้นจันทร์" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+      <img src="/imgR8/ผัดไทเส้นจันทร์.jpg" alt="Norway" style="width:50%">
+      <h1><b>ผัดไทเส้นจันทร์</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿110.</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+       <hr>
+      <h4><b><a href="#ผัดไทเส้นจันทร์กุ้งสด" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+      <img src="/imgR8/ผัดไทเส้นจันทร์กุ้งสด.jpg" alt="Norway" style="width:50%">
+      <h1><b>ผัดไทเส้นจันทร์กุ้งสด</b><span class="w3-right w3-tag w3-dark-grey w3-round">฿220.</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+       <hr>
+       <h4><b><a href="#วุ้นเส้นผัดไท" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+       <img src="/imgR8/วุ้นเส้นผัดไท.webp" alt="Norway" style="width:50%">
+       <h1><b>วุ้นเส้นผัดไท</b><span class="w3-right w3-tag w3-dark-grey w3-round">฿110.</span></h1>
+       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+        <hr>
+       <h4><b><a href="#วุ้นเส้นผัดไทกุ้งสด" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+       <img src="/imgR8/วุ้นเส้นผัดไทกุ้งสด.jpg" alt="Norway" style="width:50%">
+       <h1><b>วุ้นเส้นผัดไทกุ้งสด</b><span class="w3-right w3-tag w3-dark-grey w3-round">฿220.</span></h1>
+       
+       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+        <hr>
+        <h4><b><a href="#ข้าวผัดกุ้ง" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+       <img src="/imgR8/ข้าวผัดกุ้ง.jpg" alt="Norway" style="width:50%">
+       <h1><b>ข้าวผัดกุ้ง</b><span class="w3-right w3-tag w3-dark-grey w3-round">฿180.</span></h1>
+       
+       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+        <hr>
+        <h4><b><a href="#ข้าวผัดหมู" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+       <img src="/imgR8/ข้าวผัดหมู.jpg" alt="Norway" style="width:50%">
+       <h1><b>ข้าวผัดหมู</b><span class="w3-right w3-tag w3-dark-grey w3-round">฿180.</span></h1>
+       
+       <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+        <hr>
+
+      </div><br>
+
+  </div>
+</div>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

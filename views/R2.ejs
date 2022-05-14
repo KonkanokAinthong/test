@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ฮ้านถึงเจียงใหม่</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/imgR2/f1.jpg");
+  -webkit-filter: contrast(90%);
+  filter: contrast(90%);
+  min-height: 100%;
+  
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="home" class="w3-bar-item w3-button">HOME</a>
+    <a href="Delivery1" class="w3-bar-item w3-button">Delivery</a>
+    <a href="Receive1" class="w3-bar-item w3-button">Receive</a>
+    <a href="typeoffood" class="w3-bar-item w3-button">type of food</a>
+    <a href="Recommended-restaurants1" class="w3-bar-item w3-button">Recommended-restaurants</a>
+    <a href="allrestaurants" class="w3-bar-item w3-button">All restaurants</a>
+    <input type=button onClick='window.history.back()' value='No'>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Han<br>tueng Chiangmai</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Recommended');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Recommended</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Northern');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Northern Cuisine</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Chili Dip');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Chili Dip</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Stir-Fried');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Stir-Fried</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Soup');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Soup</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Deep Fried');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Deep Fried</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Spicy Salad');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Spicy Salad</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Individual Dish');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Individual Dish</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cafe nature');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Cafe nature</div>
+      </a>
+     
+    </div>
+
+    <div id="Recommended" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="ชุดออเดิร์ฟเมือง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f2.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">200 Baht</span></h1>      
+      <h5><b>ชุดออเดิร์ฟเมือง </b>  </h5>
+      <h5><p >Khantoke set menu</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+   
+      <h4><b><a href="#ชุดขนมจีนน้ำเงี้ยว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f3.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">40 Baht</span></h1>      
+      <h5><b>ชุดขนมจีนน้ำเงี้ยว </b> 
+      <h5><p>Rice noodle in spicy tomato soup with pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวซอยไก่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f4.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ข้าวซอยไก่</b></h5> 
+      <h5><p>Khao Soi</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวเงี้ยว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f5.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">20 Baht</span></h1>      
+      <h5><b>ข้าวเงี้ยว</b></h5> 
+      <h5><p>Seasoned rice steamed in banana leaf</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงเห็ดถอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f6.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">100 Baht</span></h1>      
+      <h5><b>แกงเห็ดถอบ </b> 
+      <h5><p>Seasonal mushroom spicy soup</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผัดเห็ดถอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f7.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">100 Baht</span></h1>      
+      <h5><b>ผัดเห็ดถอบ</b></h5> 
+      <h5><p>Stir-fried seasonal mushroom</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ต้มเห็ดถอบน้ำพริกข่า" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f8.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">100 Baht</span></h1>      
+      <h5><b>ต้มเห็ดถอบน้ำพริกข่า</b></h5> 
+      <h5><p>Boiled seasonal mushroom served with galangal dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงผักหวานปลาแห้ง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f9.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงผักหวานปลาแห้ง </b> 
+      <h5><p>Pak Waan vegetable spicy soup with dried Fish </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงผักหวานไข่มด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f10.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">90 Baht</span></h1>      
+      <h5><b>แกงผักหวานไข่มด</b></h5> 
+      <h5><p>Pak waan vegetable spicy soup with ant egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงเซียงดาปลาแห้ง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f11.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงเซียงดาปลาแห้ง</b></h5> 
+      <h5><p>Siang Daa vegetable spicy soup with dried Fish</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#หมูแดดเดียว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f12.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>หมูแดดเดียว </b> 
+      <h5><p>Deep fried dried pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ไก่นึ่งทรงเครื่อง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f13.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>ไก่นึ่งทรงเครื่อง</b></h5> 
+      <h5><p>steamed chicken curry</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ห่อนึ่งไก่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f14.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ห่อนึ่งไก่</b></h5> 
+      <h5><p>chicken curry steamed in banana lef</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำแหนมสด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f15.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำแหนมสด </b> 
+      <h5><p>Fermented pork spicy salad (rare meat)</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ส้มตำทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f16.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ส้มตำทอด</b></h5> 
+      <h5><p>Papaya Tempura spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงอ่อมหมู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f17.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงอ่อมหมู</b></h5> 
+      <h5><p>Nortern spicy pork stew</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ลาบหมู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f18.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ลาบหมู </b> 
+      <h5><p>Northern minced pork spicy salad with herbs</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงหน่อไม้หวานใส่หมู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f19.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงหน่อไม้หวานใส่หมู</b></h5> 
+      <h5><p>Bamboo shoot spicy soup with pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงหอยขม" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f20.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงหอยขม</b></h5> 
+      <h5><p>Freahwater snail curry</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#มดแดงผัดไข่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f21.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">100 Baht</span></h1>      
+      <h5><b>มดแดงผัดไข่ </b> 
+      <h5><p>Stir-Fried ant eggs with egg </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ไข่เจียวไข่มดแดง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f22.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">90 Baht</span></h1>      
+      <h5><b>ไข่เจียวไข่มดแดง</b></h5> 
+      <h5><p>Ant eggs omelets</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แหนมหมกไข่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f23.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>แหนมหมกไข่</b></h5> 
+      <h5><p>Fermented pork with egg grilled in banana leaf</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แหนมผัดไข่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f24.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>แหนมผัดไข่ </b> 
+      <h5><p>Stir-Fried fermanted pork with egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#หมกปลาทู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f25.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">80 Baht</span></h1>      
+      <h5><b>หมกปลาทู</b></h5> 
+      <h5><p>Preserved mackerel grilled in banana leaf</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผักกาดจอ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f26.png" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผักกาดจอ</b></h5> 
+      <h5><p>Chinese cabbage soup with pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ปูอ่อง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f27.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ปูอ่อง</b></h5>       
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>     
+  
+    </div>
+<!--อาหารพื้นเมือง-->
+    <div id="Northern" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="ข้าวซอยเนื้อ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f28.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ข้าวซอยเนื้อ </b>  </h5>
+      <h5><p >Khao Soi; Northen Style Curry Noodle Soup (Beef)</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+   
+      <h4><b><a href="#ยำจิ้นไก่(แกงไก่)" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f29.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ยำจิ้นไก่(แกงไก่) </b> 
+      <h5><p>Spicy chicken soup with Thai herbs</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#เห็ดนึ่งน้ำพริกข่า" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f30.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>เห็ดนึ่งน้ำพริกข่า</b></h5> 
+      <h5><p>Steamed mushroom served with galangal dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ส้าเนื้อสุก" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f31.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ส้าเนื้อสุก</b></h5> 
+      <h5><p>Spicy beef salad with Thai herbs</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงผักบุ้งใส่ปลา" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f32.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงผักบุ้งใส่ปลา</b> 
+      <h5><p>Morning glory spicy soup with Fish</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงผักหวานใส่ไข่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f33.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงผักหวานใส่ไข่</b></h5> 
+      <h5><p>Pak Waan vegetable spicy soup with eggs</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงผักหวานใส่ปลาแห้ง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f34.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงผักหวานใส่ปลาแห้ง</b></h5> 
+      <h5><p>Boiled Pak Waan vegetable spicy soup with dried Fish</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#หมูยอนึ่งน้ำพริกข่า" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f35.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>หมูยอนึ่งน้ำพริกข่า </b> 
+      <h5><p>Steamed Vietnamese sausage served </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงฮังเล" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f36.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงฮังเล</b></h5> 
+      <h5><p>Kang Hung Lay</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงโฮ๊ะ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f37.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>แกงโฮ๊ะ</b></h5> 
+      <h5><p>Kang Hoh</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ตำขนุน" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f38.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ตำขนุน </b> 
+      <h5><p>Stir-Fried young jackfruit with minced pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงแคไก่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f39.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>แกงแคไก่</b></h5> 
+      <h5><p>Spicy mix vegetable spicy soup with chicken</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ส้าแตงกวาใส่น้ำปู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f40.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ส้าแตงกวาใส่น้ำปู</b></h5> 
+      <h5><p>Spicy cucumber paste salad with crab paste</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำหน่อน้ำปู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f41.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ยำหน่อน้ำปู </b> 
+      <h5><p>Bamboo Shoot Spicy Salad with crab paste</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>     
+  
+    </div>
+    <!--น้ำพริก-->
+    <div id="Chili Dip" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="น้ำพริกหนุ่ม" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f42.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">45 Baht</span></h1>      
+      <h5><b>น้ำพริกหนุ่ม </b>  </h5>
+      <h5><p >Green Chili Dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+   
+      <h4><b><a href="#น้ำพริกอ่อง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f43.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">45 Baht</span></h1>      
+      <h5><b>น้ำพริกอ่อง </b> 
+      <h5><p>Minced pork and tomato chili dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#น้ำพริกปลาทู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f44.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>น้ำพริกปลาทู</b></h5> 
+      <h5><p>Mackerel Chili dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#น้ำพริกปลาร้า" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f45.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>น้ำพริกปลาร้า</b></h5> 
+      <h5><p>Preserved Fish Chili dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#น้ำพริกน้ำปู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f46.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>น้ำพริกน้ำปู</b> 
+      <h5><p>Crab paste Chili dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#น้ำพริกตาแดง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f47.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>น้ำพริกตาแดง</b></h5> 
+      <h5><p>Red hot Chili dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#น้ำพริกกะปิ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f48.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>น้ำพริกกะปิ</b></h5> 
+      <h5><p>Shrimp paste Chili dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#น้ำพริกข่า" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f49.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>น้ำพริกข่า </b> 
+      <h5><p>SGalangal Chili dip </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>     
+  
+    </div>
+
+    <!--ผัด-->
+    <div id="Stir-Fried" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="วุ้นเส้นผัดไข่ใส่หมูยอ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f50.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>วุ้นเส้นผัดไข่ใส่หมูยอ </b>  </h5>
+      <h5><p >Stir-fried grass noodle with Vietnamese sausage and egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+   
+      <h4><b><a href="#วุ้นเส้นผัดไข่ใส่แหนม" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f51.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>วุ้นเส้นผัดไข่ใส่แหนม </b> 
+      <h5><p>Stir-fried fermented pork with grass noodle and egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#วุ้นเส้นผัดไข่ใส่หมูกรอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f52.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>วุ้นเส้นผัดไข่ใส่หมูกรอบ</b></h5> 
+      <h5><p>Stir-fried grass noodle with crispy pork and egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#วุ้นเส้นผัดไข่ใส่ไข่เค็ม" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f53.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>วุ้นเส้นผัดไข่ใส่ไข่เค็ม</b></h5> 
+      <h5><p>Stir-fried grass noodle with salted egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#กะหล่ำปลีผัดวุ้นเส้นหมูยอ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f54.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>กะหล่ำปลีผัดวุ้นเส้นหมูยอ</b> 
+      <h5><p>Stir-fried cabbage with grass noodle and Vietnamese sausage</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผัดผงกะหรี่ทะเล" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f55.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>ผัดผงกะหรี่ทะเล</b></h5> 
+      <h5><p>Stir-fried seafood with curry powder</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#เขียวหวานหมูผัดแห้ง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f56.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>เขียวหวานหมูผัดแห้ง</b></h5> 
+      <h5><p>Stir-fried pork with green curry paste</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผัดบล็อกโคลี่หมูกรอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f57.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผัดบล็อกโคลี่หมูกรอบ </b> 
+      <h5><p>Stir-fried broccoli with crispy pork </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>     
+
+      <h4><b><a href="#ผัดคะน้าหมูกรอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f58.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผัดคะน้าหมูกรอบ </b> 
+      <h5><p>Stir-fried chinese kale with crispy pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผักตำลึงผัดไข่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f59.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผักตำลึงผัดไข่</b></h5> 
+      <h5><p>Stir-fried ivy gourd with egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#กะเพราหมู หมูกรอบ ไก่ ทะเล เนื้อ ปลา ไข่เยี่ยวม้า แคปหมู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f60.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50-70 Baht</span></h1>      
+      <h5><b>กะเพราหมู หมูกรอบ ไก่ ทะเล เนื้อ ปลา ไข่เยี่ยวม้า แคปหมู</b></h5> 
+      <h5><p>Stir-fried holy basil with pork/cripy pork/chicken/seafood/beef/fish/century/pork snack</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#เห็ดนางฟ้าผัดเต้าหู้ไข่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f61.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>เห็ดนางฟ้าผัดเต้าหู้ไข่</b> 
+      <h5><p>Stir-fried Straw mushroom with egg tofu</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#หน่อไม้ผัดไข่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f62.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>หน่อไม้ผัดไข่</b></h5> 
+      <h5><p>Stir-fried bamboo shoot with egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผัดผักรวมหมู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f63.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผัดผักรวมหมู</b></h5> 
+      <h5><p>Stir-fried mixed vegetable with pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผัดซาโยเต้น้ำมันหอย" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f64.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผัดซาโยเต้น้ำมันหอย </b> 
+      <h5><p>Stir-fried Sayote vegetable with oyste sauce </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr> 
+  
+    </div>
+
+    <!--แกง แกงจืด-->
+    <div id="Soup" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="แกงไข่น้ำ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f65.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>แกงไข่น้ำ </b>  </h5>
+      <h5><p >Clear egg soup</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+   
+      <h4><b><a href="#แกงจืดเต้าหู้" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f66.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงจืดเต้าหู้ </b> 
+      <h5><p>Tofu clear soup with minced pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงจืดเต้าหู้สาหร่าย" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f67.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงจืดเต้าหู้สาหร่าย</b></h5> 
+      <h5><p>Tofu and seaweed clear soup with minced pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงจืดตำลึง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f68.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>แกงจืดตำลึง</b></h5> 
+      <h5><p>Ivy gourd clear soup with pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงจืดตำลึงใส่ไข่" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f69.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>แกงจืดตำลึงใส่ไข่</b> 
+      <h5><p>Ivy goued soup with egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงจืดผักหวาน" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f70.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงจืดผักหวาน</b></h5> 
+      <h5><p>Pak Waan vegetable clear soup</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#แกงจืดวุ้นเส้น" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f71.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>แกงจืดวุ้นเส้น</b></h5> 
+      <h5><p>Grass noodle clear soup with pork and vegetable</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ต้มจืดแตงกวาใส่วุ้นเส้น" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f72.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ต้มจืดแตงกวาใส่วุ้นเส้น </b> 
+      <h5><p>Cucumber clear soup with grass noodle  </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>    
+      
+      <h4><b><a href="#ต้มแซ่บไข่ปลา" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f73.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ต้มแซ่บไข่ปลา</b></h5> 
+      <h5><p>Spicy and sour Fish eggs soup</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ต้มแซ่บปลา" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f74.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ต้มแซ่บปลา</b></h5> 
+      <h5><p>Spicy and sour Fish  soup</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ไข่ตุ๋นหมูสับ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f75.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ไข่ตุ๋นหมูสับ</b> 
+      <h5><p>Steamed egg with minced pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ไข่ตุ๋นหมูยอ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f76.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ไข่ตุ๋นหมูยอ</b></h5> 
+      <h5><p>Steamed egg with Vietnamese sausage</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ไข่ตุ๋นทะเล" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f77.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>ไข่ตุ๋นทะเล</b></h5> 
+      <h5><p>Steamed egg with seafood</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ไข่ตุ๋นปลา" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f78.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ไข่ตุ๋นปลา </b> 
+      <h5><p>Steamed egg with Fish  </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>   
+  
+    </div>
+
+    <!--ทอด-->
+    <div id="Deep Fried" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="ไส้อั่ว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f79.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">45 Baht</span></h1>      
+      <h5><b>ไส้อั่ว </b>  </h5>
+      <h5><p >Northem Spicy sausage with Thai herbs</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+   
+      <h4><b><a href="#แคปหมู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f80.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">30 Baht</span></h1>      
+      <h5><b>แคปหมู </b> 
+      <h5><p>Pork  sanck</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#หมูยอชุปแป้งทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f81.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>หมูยอชุปแป้งทอด</b></h5> 
+      <h5><p>Fried Vietnamese sausage</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ปลาหมึกชุปแป้งทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f82.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ปลาหมึกชุปแป้งทอด</b></h5> 
+      <h5><p>Squid Tempura</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#กุ้งชุปแป้งทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f83.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>กุ้งชุปแป้งทอด</b> 
+      <h5><p>Shrimp Tempura</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#กุ้งฝอยทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f84.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>กุ้งฝอยทอด</b></h5> 
+      <h5><p>Tiny freshwater Shrimp Tempura</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผักรวมทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f85.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ผักรวมทอด</b></h5> 
+      <h5><p>mixed vegetable Tempura</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ปีกบนไก่ทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f86.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ปีกบนไก่ทอด </b> 
+      <h5><p>Deep fried chicken wings </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>    
+      
+      <h4><b><a href="#ปลาทูทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f87.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ปลาทูทอด</b></h5> 
+      <h5><p>Deep fried mackerel</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#หมกปลาทู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f88.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">80 Baht</span></h1>      
+      <h5><b>หมกปลาทู</b></h5> 
+      <h5><p>Deep fried preserved mackerel</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#กุนเชียงชุบแป้งทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f89.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>กุนเชียงชุบแป้งทอด</b> 
+      <h5><p>Deep fried Chinese sausage</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>      
+  
+    </div>
+
+    <!--ยำ-->
+    <div id="Spicy Salad" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="ตำไทย" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f90.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ตำไทย </b>  </h5>
+      <h5><p >Papaya salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+   
+      <h4><b><a href="#ตำไข่เค็ม" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f91.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ตำไข่เค็ม </b> 
+      <h5><p>Papaya salad with salted egg</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ตำแคบหมู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f92.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ตำแคบหมู</b></h5> 
+      <h5><p>Papaya salad mixed pork snack</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ตำซั่ว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f93.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ตำซั่ว</b></h5> 
+      <h5><p>Papaya salad mixed with rice noodle</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ตำแตงกวา" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f94.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ตำแตงกวา</b> 
+      <h5><p>Cucumber spicy salad </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ตำมะม่วง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f95.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ตำมะม่วง</b></h5> 
+      <h5><p>Green mango spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ตำมะม่วงน้ำปู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f96.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ตำมะม่วงน้ำปู</b></h5> 
+      <h5><p>Green mango spicy salad with crab paste</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ตำมะม่วงปลากรอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f97.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ตำมะม่วงปลากรอบ</b> 
+      <h5><p>Green mango spicy salad with cripy Fish</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>    
+      
+      <h4><b><a href="#ตำแตงกวาหมูยอ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f98.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ตำแตงกวาหมูยอ</b></h5> 
+      <h5><p>Cucumber spicy salad with Vietnamese sausage</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ส้มตำทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f99.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ส้มตำทอด</b></h5> 
+      <h5><p>Papaya Tempura spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ตำเมืองใส่แคบหมู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f100.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ตำเมืองใส่แคบหมู</b> 
+      <h5><p>Northern style papaya salad mixed with pork snack</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>  
+      
+      <h4><b><a href="#ตำมาม่าทะเล" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f101.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>ตำมาม่าทะเล </b> 
+      <h5><p>Instant noodle spicy salad with seafood</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำหมูยอ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f102.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำหมูยอ</b></h5> 
+      <h5><p>Vietnamese sausage spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำมาม่า" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f103.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ยำมาม่า</b></h5> 
+      <h5><p>Instant noodle spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำเห็ดรวม" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f104.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำเห็ดรวม</b> 
+      <h5><p>Variety mushroom spicy salad </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำแหนมสด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f105.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำแหนมสด</b></h5> 
+      <h5><p>Fermented pork spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำไส้ตัน" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f106.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>ยำไส้ตัน</b></h5> 
+      <h5><p>Chitterlings spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำไข่ดาว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f107.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำไข่ดาว</b> 
+      <h5><p>Fried eggs spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>    
+      
+      <h4><b><a href="#ยำไข่เจียว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f108.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำไข่เจียว</b></h5> 
+      <h5><p>omelets spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำไข่เยี่ยวม้า" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f109.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำไข่เยี่ยวม้า</b></h5> 
+      <h5><p>Century eggs spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำไข่มะตูม" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f110.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำไข่มะตู</b> 
+      <h5><p>Half boiled spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr> 
+
+      <h4><b><a href="#ยำผักบุ้งกรอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f111.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำผักบุ้งกรอบ</b></h5> 
+      <h5><p>Morning glory tempura spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำตำลึงกรอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f112.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำตำลึงกรอบ</b></h5> 
+      <h5><p>Ivy gourd tempura spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำผักหวานทอดกรอบ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f113.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>ยำผักหวานทอดกรอบ</b> 
+      <h5><p>Pak Waan vegetable tempura spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>    
+      
+      <h4><b><a href="#ยำกุ้งฝอยทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f114.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำกุ้งฝอยทอด</b></h5> 
+      <h5><p>Tiny freshwaterb Shrimp tempura spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำเส้นขนมจีน" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f115.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำเส้นขนมจีน</b></h5> 
+      <h5><p>Rice noodle spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำก้านคะน้าทะเล" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f116.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำก้านคะน้าทะเล</b> 
+      <h5><p>Chinese kale spicy salad with seafood</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>  
+      
+      <h4><b><a href="#ยำผักบุ้งกุ้งสด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f117.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำผักบุ้งกุ้งสด</b> 
+      <h5><p>Morning glory spicy salad with shrimp</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำปลากระป๋อง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f118.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำปลากระป๋อง</b></h5> 
+      <h5><p>Canned Sardine spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำรวม" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f119.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>ยำรวม</b></h5> 
+      <h5><p>Mixed spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำวุ้นเส้น" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f120.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ยำวุ้นเส้น</b> 
+      <h5><p>Glass noodle spicy salad </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ยำทะเล" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f121.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+      <h5><b>ยำทะเล</b></h5> 
+      <h5><p>Seafood spicy salad</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+      
+    </div>
+
+    <!--อาหารจานเดียว-->
+    <div id="Individual Dish" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="ข้าวหมูกระเทียมพริกไทย" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f122.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ข้าวหมูกระเทียมพริกไทย</b>  </h5>
+      <h5><p >Rice with Stir-Fried pork with garlic</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+   
+      <h4><b><a href="#ข้าวทะเลรวมทอดกระเทียมพริกไทย" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f123.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ข้าวทะเลรวมทอดกระเทียมพริกไทย</b> 
+      <h5><p>Rice with Stir-Fried seafod with garlic and black pepper</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผัดผักบุ้งหมูสับราดข้าว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f124.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผัดผักบุ้งหมูสับราดข้าว</b></h5> 
+      <h5><p>Rice with Stir-fried Morning glovy with minced pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผัดคะน้าหมูราดข้าว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f125.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผัดคะน้าหมูราดข้าว</b></h5> 
+      <h5><p>Rice with Stir-fried Chinese kale with pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ผัดเห็ดนางฟ้าหมูราดข้าว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f126.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ผัดเห็ดนางฟ้าหมูราดข้าว</b> 
+      <h5><p>Rice with Stir-fried mushroom with pork </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#กะเพราราดข้าว (หมู ไก่ เนื้อ ทะเล ไข่เยี่ยวม้า ปลา แคบหมู)" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f127.jpeg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>กะเพราราดข้าว (หมู ไก่ เนื้อ ทะเล ไข่เยี่ยวม้า ปลา แคบหมู)</b></h5> 
+      <h5><p>Rice with Stir-fried holy basil with pork /beef/seafood/chicken/century eggs/fish/crispy pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#หน่อไม้ผัดพริกแกงราด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f128.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>หน่อไม้ผัดพริกแกงราด</b></h5> 
+      <h5><p>Rice with Stir-fried bamboo shoot with curry paste and pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#สุกี้น้ำ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f129.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>สุกี้น้ำ</b> 
+      <h5><p>Thai style Suki yaki</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>    
+      
+      <h4><b><a href="#สุกี้แห้ง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f130.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>สุกี้แห้ง</b></h5> 
+      <h5><p>Stir-fried Thai style Suki yaki </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#มาม่าผัด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f131.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>มาม่าผัด</b></h5> 
+      <h5><p>Stir-Fried instant noodle</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวผัดกะเพราคลุก" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f132.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ข้าวผัดกะเพราคลุก</b> 
+      <h5><p>Fried rice with pork and holy basil</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>  
+      
+      <h4><b><a href="#บล็อกโคลี่หมูกรอบราดข้าว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f133.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>บล็อกโคลี่หมูกรอบราดข้าว</b> 
+      <h5><p>Rice with Stir-fried broccolin with cripy pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวหมูทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f134.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ข้าวหมูทอด</b></h5> 
+      <h5><p>Rice with fried pork</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวหมูยอทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f135.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ข้าวหมูยอทอด</b></h5> 
+      <h5><p>Rice with fried Vietnamese sausage</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวกุนเชียงชุบแป้งทอด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f136.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ข้าวกุนเชียงชุบแป้งทอด</b> 
+      <h5><p>Rice with fried Chinese sausage </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวผัดไส้อั่ว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f137.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ข้าวผัดไส้อั่ว</b></h5> 
+      <h5><p>Fried rice with nortern sausage </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวผัดน้ำพริกอ่อง" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f138.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ข้าวผัดน้ำพริกอ่อง</b></h5> 
+      <h5><p>Fried rice tomato chlil dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวผัดน้ำพริกปลาทู" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f139.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ข้าวผัดน้ำพริกปลาทู</b> 
+      <h5><p>Fried rice with mackerel chili dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>    
+      
+      <h4><b><a href="#ข้าวผัดน้ำพริกกะปิ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f140.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+      <h5><b>ข้าวผัดน้ำพริกกะปิ</b></h5> 
+      <h5><p>Fried rice with shrimp paste chili dip</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ข้าวผัดหมู/ไก่/เนื้อ/ทะเล" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgR2/f141.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+      <h5><b>ข้าวผัดหมู/ไก่/เนื้อ/ทะเล</b></h5> 
+      <h5><p>Fried rice with pork/chicken/beef/esafood</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>      
+      
+    </div>
+
+      <!--คอฟฟี้-->
+      <div id="Cafe nature" class="w3-container menu w3-padding-32 w3-white">
+        <h4><b><a href="#Espresso/Americano/Latte/cappuccino/Mocha" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+        <h3><b>Espresso/Americano/Latte/cappuccino/Mocha</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>   
+        
+        <h4><b><a href="#Cocoa/Chocolate/Ovaltine/White Mait" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+        <h3><b>Cocoa/Chocolate/Ovaltine/White Mait</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>    
+
+        <h4><b><a href="#Milk/Pink Milk/butterfly pea milk/Malt" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+        <h3><b>Milk/Pink Milk/butterfly pea milk/Malt</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>    
+
+        <h4><b><a href="#Chocolate banana frappe/white Chocolate frappe/Cookie&cream frappe" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">70 Baht</span></h1>      
+        <h3><b>Chocolate banana frappe/white Chocolate frappe/Cookie&cream frappe</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>    
+
+
+        <h4><b><a href="#Two tone milk/Two tone tea" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+        <h3><b>Two tone milk/Two tone tea</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>    
+
+        <h4><b><a href="#Thai milk tea /Nestea/Greentea/Macha greentea/Japanese hojicha" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+        <h3><b>Thai milk tea /Nestea/Greentea/Macha greentea/Japanese hojicha</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>    
+
+        <h4><b><a href="#Peach/Apple/Lamon tea/Honey lemon/apple/Kiwi/Strawberry/Bluberry/Lychee/Pineapple/Plum/Passion fruit/Blue Hawaii/Green apple[Soda]" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">50 Baht</span></h1>      
+        <h3><b>Peach/Apple/Lamon tea/Honey lemon/apple/Kiwi/Strawberry/Bluberry/Lychee/Pineapple/Plum/Passion fruit/Blue Hawaii/Green apple[Soda]</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>  
+        
+        
+        <h4><b><a href="#Strawberry/Blueberry/Pineapple/mango Passion fruit/lemon honey/[Smoothies]" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+        <h3><b>Strawberry/Blueberry/Pineapple/mango Passion fruit/lemon honey/[Smoothies]</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>
+
+        <h4><b><a href="#Strawberry/Orange/Blueberry/Pineapple/Lychee/Passion fruit/mango/Watermelon[Shake]" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>        
+        <span class="w3-right w3-tag w3-dark-grey w3-round">60 Baht</span></h1>      
+        <h3><b>Strawberry/Blueberry/Pineapple/mango Passion fruit/lemon honey/[Smoothies]</b>  </h3>        
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>
+             
+        
+      </div>      
+
+      
+    </div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="/w3images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="/w3images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

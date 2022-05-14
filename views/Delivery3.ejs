@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delivery3 MyFood</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", "sans-serifRaleway", Arial, Helvetica, sans-serif}
+.button {
+  display: inline-block;
+  padding: 10px 200px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff5f37;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #dfc93f}
+
+.button:active {
+  background-color: #eed63b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body class="w3-light-grey">
+
+   <!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:15%;min-width:300px" id="mySidebar">
+  <img src="/img/logo.svg" alt="logo" style="width: 75%;" class="w3-round" ><br><br>
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-red w3-xlarge" style="max-width:2000px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    
+  </div>
+</div>
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+  
+    <!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:100px;margin-right:40px">
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>บริการจัดส่งอาหาร</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>ร้านอาหาร.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+    </div>
+    <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/R14.jpg" alt="Norway" style="width:98%">
+      <div class="w3-container w3-white">
+        <h3>เฮือนใจ๋ยอง</h3>
+        <h6 class="w3-opacity">ค่าจัดส่ง ฿9</h6>
+        <p>อาหารไทยอาหารเหนือ</p>
+        <p>ที่อยู่ : P4G3+44 ตำบล สันกำแพง อำเภอสันกำแพง เชียงใหม่ 50130</p>
+        <a href="R13">
+        <p class="w3-center"> 
+          <button class="button">สั่งซื้อ</button></a>
+      </div>
+    </div>
+    
+      <div class="w3-third w3-margin-bottom">
+        <img src="img/R15.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>บ้านลันได</h3>
+          <h6 class="w3-opacity">From $149</h6>
+          <p>ร้านกาแฟ/ชาอาหารนานาชาติ</p>
+          <p>ที่อยู่ : ตำบล ขี้เหล็ก อำเภอแม่แตง เชียงใหม่ 50150<sup></sup></p>
+          <a href="R14">
+          <p class="w3-center"> 
+            <button class="button">สั่งซื้อ</button></a>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="img/R16.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>The Good View Bar And Restaurant </h3>
+          <h6 class="w3-opacity">From $199</h6>
+          <p>ผับ/เที่ยวกลางคืนกึ่งผับ/ร้านเหล้า/บาร์</p>
+          <p>ที่อยู่ : 44-32 ถนน เจริญราษฏร์ ตำบล ช้างม่อย อำเภอเมืองเชียงใหม่ เชียงใหม่ 50000<sup>2</sup></p>
+          <a href="R15">
+          <p class="w3-center"> 
+            <button class="button">สั่งซื้อ</button></a>
+        </div>
+      </div>
+      <div class="w3-row-padding w3-padding-16">
+        <div class="w3-third w3-margin-bottom">
+          <img src="img/R17.jpg" alt="Norway" style="width:98%">
+          <div class="w3-container w3-white">
+            <h3>เลิศรส</h3>
+            <h6 class="w3-opacity">ค่าจัดส่ง ฿9</h6>
+            <p>อาหารทะเลอาหารจีน</p>
+            <p>ที่อยู่ : 126 ถนน วังสิงห์คำ ตำบลป่าตัน อำเภอเมืองเชียงใหม่ เชียงใหม่ 50300</p>
+            <a href="R16">
+            <p class="w3-center"> 
+              <button class="button">สั่งซื้อ</button></a>
+          </div>
+        </div>
+        
+          <div class="w3-third w3-margin-bottom">
+            <img src="imgR17/เกาเหลา ไม่ใส่เครื่องใน.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-white">
+              <h3>เนื้อวัวรสเยี่ยม</h3>
+              <h6 class="w3-opacity">From $149</h6>
+              <p>อาหารไทย</p>
+              <p>ที่อยู่ : 199 ถ.มูลเมือง อ.เมือง เชียงใหม่<sup></sup></p>
+              <a href="R17">
+              <p class="w3-center"> 
+                <button class="button">สั่งซื้อ</button></a>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img src="img/R19.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-white">
+              <h3>ขนมจีนสันป่าข่อย</h3>
+              <h6 class="w3-opacity">From $199</h6>
+              <p>อาหารไทย</p>
+              <p>ที่อยู่ : 122 ถ.เจริญราษฎร์ ต.ช้างม่อย อ.เมือง จ.เชียงใหม่<sup>2</sup></p>
+              <a href="R18">
+              <p class="w3-center"> 
+                <button class="button">สั่งซื้อ</button></a>
+            </div>
+          </div>
+           <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="Delivery1" class="w3-bar-item w3-hover-black w3-button">1</a>
+      <a href="Delivery2" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="Delivery3" class="w3-bar-item w3-button w3-hover-black">3</a>
+    </div>
+  </div>
+  </div>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GENERAL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/imgo/o1.jpg");
+  -webkit-filter: contrast(90%);
+  filter: contrast(90%);
+  min-height: 95%;
+  
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="home" class="w3-bar-item w3-button">HOME</a>
+    <a href="Healthyfood" class="w3-bar-item w3-button">Healthy food</a>
+    <a href="Fattyfood" class="w3-bar-item w3-button">Fatty food</a>
+    <a href="sugar" class="w3-bar-item w3-button">Sugar</a>
+    <a href="general" class="w3-bar-item w3-button">General</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">General food</span>
+    
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">    
+      <a href="javascript:void(0)" onclick="openMenu(event, 'General food');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">General food</div>
+      </a>
+     
+      
+      
+   
+
+   
+    <div id="General food" class="w3-container menu w3-padding-32 w3-white">
+      <h4><b><a href="#ชะอมผักวุ้นเส้น" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgo/o2.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">120 Baht</span></h1>      
+      <h5><b>ชะอมผักวุ้นเส้น</b></h5> 
+      <h5><p>Stir-Fried Acaca with Glass Noodle and Egg</p></h5>
+      
+      <hr>
+
+      <h4><b><a href="#ไก่ผัดห้าสหาย" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgo/o3.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">185 Baht</span></h1>      
+      <h5><b>ไก่ผัดห้าสหาย</b></h5> 
+      <h5><p>Fried Chicken with Cashew Nut Jujube ,Chestnut,Ginkgo and Water Chestnut</p></h5>
+      
+      <hr>
+
+      <h4><b><a href="#ลาบหมูแบบเหนือ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgo/o4.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">155 Baht</span></h1>      
+      <h5><b>ลาบหมูแบบเหนือ</b></h5> 
+      <h5><p>Northern Style Minced Pork Salad</p></h5>
+     
+      <hr>
+
+      <h4><b><a href="#เนื้อน้ำตก" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgo/o5.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">175 Baht</span></h1>      
+      <h5><b>เนื้อน้ำตก</b></h5> 
+      <h5><p>Isaan Style Salad with Beef</p></h5>
+      
+      <hr>
+
+      <h4><b><a href="#ลาบเป็ด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgo/o6.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">185 Baht</span></h1>      
+      <h5><b>ลาบเป็ด</b></h5> 
+      <h5><p>Isaan Style Spicy Minced Duck Salad with Herbs </p></h5>
+      
+      <hr>
+      <h4><b><a href="#แกงเลียงกุ้งสด" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgo/o7.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">195 Baht</span></h1>      
+      <h5><b>แกงเลียงกุ้งสด</b></h5> 
+      <h5><p>Shrimp Paste Soup with Prawns</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ต้มแซ่บกระดูกอ่อน" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgo/o8.webp" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">195 Baht</span></h1>      
+      <h5><b>ต้มแซ่บกระดูกอ่อน</b></h5> 
+      <h5><p>Spicy Pork Spare Ribs Soup</p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#ปลาหมึกนึ่งมะนาว" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+      <img src="/imgo/o9.jpg" alt="Norway" style="width:50%">
+      <span class="w3-right w3-tag w3-dark-grey w3-round">285 Baht</span></h1>      
+      <h5><b>ปลาหมึกนึ่งมะนา</b></h5> 
+      <h5><p>Steamed Squids with Hot and Spicy Thai Lirme Sauce </p></h5>
+      <h5><p class="w3-text-grey">Calorie:</p></h5>
+      <hr>
+
+      <h4><b><a href="#กุ้งเผาเกลือ" class="w3-bar-item w3-yellow w3-mobile w3-button"  >เพิ่มลงในตะกร้า </a></b></h4>
+        <img src="/imgo/o10.jpg" alt="Norway" style="width:50%">
+        <span class="w3-right w3-tag w3-dark-grey w3-round">250 Baht</span></h1>      
+        <h5><b>กุ้งเผาเกลือ</b></h5> 
+        <h5><p>Grilled Prawns with Sea Sait</p></h5>
+        <h5><p class="w3-text-grey">Calorie:</p></h5>
+        <hr>
+
+        <h4><b><a href="#ถั่วแขกผัดกุ้ง" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+        <img src="/imgo/o11.jpg" alt="Norway" style="width:50%">
+        <h5><b>ถั่วแขกผัดกุ้ง</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿130.</span></h5>
+        <h5><p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p></h5>
+         <hr>
+
+         <h4><b><a href="#แกงหยวกกล้วย" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+         <img src="/imgo/o12.jpg" alt="Norway" style="width:50%">
+         <h5><b>แกงหยวกกล้วย</b> <span class="w3-right w3-tag w3-dark-grey w3-round">฿150.</span></h5>
+         <h5><p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p></h5>
+          <hr>
+
+          <h4><b><a href="#หมูจุ่ม" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+          <img src="/imgo/o13.jpg" alt="Norway" style="width:50%">
+          <h5><b>หมูจุ่ม</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿219.</span></h5>
+          <h5> <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p></h5>
+           <hr>
+
+           <h4><b><a href="#ยําซีฟิดบ้านสวน" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+      <img src="/imgo/o14.jpg" alt="Norway" style="width:50%">
+      <h5><b>ยําซีฟิดบ้านสวน</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿179.</span></h5>
+      <h5><p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p></h5>
+       <hr>
+
+       <h4><b><a href="#ส้าสะดุ้งหมู" class="w3-bar-item w3-yellow w3-mobile w3-button">เพิ่มลงในตะกร้า</a></b></h4> 
+       <img src="/imgo/o15.webp" alt="Norway" style="width:50%">
+       <h5><b>ส้าสะดุ้งหมู</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">฿100.</span></h5>
+       <h5><p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p></h5>
+        <hr>
+
+
+
+         
+      
+    </div>
+
+    
+    <br>
+
+  </div>
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
